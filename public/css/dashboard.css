@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    z-index: 2;
+}
+
+body {
+    background-color: #bac9f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.manual-placement {
+    position: absolute;
+    top: 25px;
+    right: 1000px;
+}
+
+.navbar {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+/* .nav-color {
+    background-color: #ffffff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out 0, 5s;
+}
+
+.bg-transparent {
+    transition: all ease-in-out 0, 5s;
+}
+
+
+.navbar-scrolled .nav-link {
+    color: #000000;
+    transition: color 0.5s ease-in-out;
+}
+
+
+.navbar-scrolled .shadow-text {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    transition: text-shadow 0.5s ease-in-out;
+} */
+
+.shadow-text {
+    font-size: 36px;
+    color: #000000;
+    /* Warna teks */
+}
+
+.accent-img {
+    z-index: 1;
+}
+
+.img-hero {
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    position: relative;
+    left: 150px;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    /* Set your preferred text color */
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    /* Set your preferred underline color */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: rgb(0, 0, 0);
+    /* Set your preferred text color on hover */
+}
+
+.nav-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.btn.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+}
+
+.btn.dropdown-toggle:hover {
+    background-color: transparent;
+}
+
+#biggestCats {
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    width: 70px;
+    height: 19px;
+    font-size: 12px;
+}
+
+/* Hero Section */
+
+.hero-tagline {
+    position: relative;
+    top: 100px;
+}
+
+.hero-tagline h1 {
+    color: #ffffff;
+    text-align: left;
+    font: 600 48px "Poppins", sans-serif;
+    position: relative;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.hero-tagline p {
+    color: #ffffff;
+    text-align: left;
+    font: 600 16px "Poppins", sans-serif;
+    position: relative;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#information {
+    background: #ffffff;
+    position: relative;
+    top: 250px;
+    width: 100%;
+    height: 600px;
+}
+
+#About {
+    position: relative;
+    top: 250px;
+    width: 100%;
+    height: 500px;
+}
+
+#Team {
+    background: #ffffff;
+    position: relative;
+    top: 250px;
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+}
+
+#Contact {
+    position: relative;
+    top: 250px;
+    width: 100%;
+    height: 500px;
+}
+.contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000; /* Set your desired text color */
+}
+
+.contact-link img {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.contact-link p {
+    position: relative;
+    top: 9px;
+}
+
+.info-team h2 {
+    color: #000000;
+    text-align: left;
+    font: 800 35px "Poppins", sans-serif;
+    position: relative;
+    left: 80px;
+    top: 70px;
+}
+
+.info-tagline h2 {
+    color: #000000;
+    text-align: left;
+    font: 800 35px "Poppins", sans-serif;
+    position: relative;
+    left: 80px;
+    top: 100px;
+}
+
+.posi-section {
+    position: relative;
+    top: 60px;
+    max-width: 1090px;
+    margin: 0 auto;
+}
+
+/* Footer */
+#footer {
+    background: #cad2e9;
+    position: relative;
+    top: 250px;
+    width: 100%;
+    height: 320px;
+    padding: 20px;
+    color: #fff;
+    margin-top: auto;
+}
+
+.footer-img {
+    position: relative;
+    top: 10px;
+}
+
+.footer-text {
+    position: relative;
+    top: 10px;
+}
+
+.text-light {
+    color: #fff;
+    /* Mengubah warna teks menjadi putih */
+}
+
+.text-light ul {
+    list-style: none;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    padding: 0;
+}
+
+.text-light ul li {
+    margin-bottom: 10px;
+}
+
+.text-light ul li a {
+    color: #fff;
+    /* Mengubah warna tautan (link) menjadi putih */
+    text-decoration: none;
+    /* Menghapus garis bawah dari tautan */
+}
+
+.text-light ul li a:hover {
+    text-decoration: underline;
+    /* Menambahkan garis bawah saat tautan dihover */
+}
+
+.line {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px 0 0 0;
+    width: 1350px;
+    height: 0px;
+    position: absolute;
+    left: 80px;
+    top: 260px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+}
+
+.rectangle {
+    background: #000000;
+    border-radius: 5px;
+    width: 6px;
+    height: 41px;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+}
+
+.box1 {
+    background: #ffffff;
+    border-radius: 40px;
+    width: 1314px;
+    min-height: 400px;
+    height: auto;
+    position: relative;
+    left: 100px;
+}
+
+.info-tagline h2 {
+    color: #000000;
+    font: 800 35px "Poppins", sans-serif;
+    position: relative;
+    left: 99px;
+    top: 29px;
+}
+
+.text1 {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.text1 p {
+    text-align: justify;
+    line-height: 1.5;
+    font-family: "poppins", sans-serif;
+    text-indent: 30px;
+}
+
+/* .contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-link img {
+    margin-right: 10px;
+} */
+
+.contact-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 80px;
+}
+
+.contact-link {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-link img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-link h5 {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
